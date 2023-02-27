@@ -1,0 +1,177 @@
+{
+	"stacks": {
+		"stack0" : {
+			"keys": ["vanilla_bfs_o2p_obuf.reads", "vanilla_bfs_o2p_obuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		},
+		"stack2" : {
+			"keys": ["spill_json_obuf.reads", "spill_json_obuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		},
+		"stack3" : {
+			"keys": ["f_spill_json_obuf.reads", "f_spill_json_obuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		},
+        "stack1" : {
+			"keys": ["vanilla_bfs_o2p_ibuf.reads", "vanilla_bfs_o2p_ibuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		},
+		"stack4" : {
+			"keys": ["spill_json_ibuf.reads", "spill_json_ibuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		},
+		"stack5" : {
+			"keys": ["f_spill_json_ibuf.reads", "f_spill_json_ibuf.writes"],
+			"labels": ["Reads", "Writes"],
+			"colors": ["#41b6c4", "#a1dab4"]
+		}
+	},
+	"srcs": [
+		[
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Vanilla + OB",
+				"stack": "stack0"
+			},
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Vanilla + IB",
+				"stack": "stack1"
+			},
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Spill O + OB",
+				"stack": "stack2"
+			},
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Spill F + OB",
+				"stack": "stack3"
+			},
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Spill O + IB",
+				"stack": "stack4"
+			},
+			{
+				"src": "../data/bfs/graph1.json",
+				"label": "Spill F + IB",
+				"stack": "stack5"
+			}
+		],
+        [
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Vanilla + OB",
+				"stack": "stack0"
+			},
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Vanilla + IB",
+				"stack": "stack1"
+			},
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Spill O + OB",
+				"stack": "stack2"
+			},
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Spill F + OB",
+				"stack": "stack3"
+			},
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Spill O + IB",
+				"stack": "stack4"
+			},
+			{
+				"src": "../data/bfs/graph3.json",
+				"label": "Spill F + IB",
+				"stack": "stack5"
+			}
+		],
+        [
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Vanilla + OB",
+				"stack": "stack0"
+			},
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Vanilla + IB",
+				"stack": "stack1"
+			},
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Spill O + OB",
+				"stack": "stack2"
+			},
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Spill F + OB",
+				"stack": "stack3"
+			},
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Spill O + IB",
+				"stack": "stack4"
+			},
+			{
+				"src": "../data/bfs/graph5.json",
+				"label": "Spill F + IB",
+				"stack": "stack5"
+			}
+		],
+        [
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Vanilla + OB",
+				"stack": "stack0"
+			},
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Vanilla + IB",
+				"stack": "stack1"
+			},
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Spill O + OB",
+				"stack": "stack2"
+			},
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Spill F + OB",
+				"stack": "stack3"
+			},
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Spill O + IB",
+				"stack": "stack4"
+			},
+			{
+				"src": "../data/bfs/graph7.json",
+				"label": "Spill F + IB",
+				"stack": "stack5"
+			}
+		]
+	],
+	"sci_not": false,
+	"major": ["0.117", "0.442", "0.785", "0.956"],
+	"width": 10,
+	"height": 5.6,
+	"rect": [0, 0, 1, 0.9],
+	"minor_spacing": 1.5,
+	"major_spacing": 2,
+	"minor_padding": 5,
+	"major_padding": 70,
+	"barwidth": 1.1,
+	"fontsize": 10,
+	"ylabel": "Number of memory operations",
+	"xlabel": "Graph density"
+}
